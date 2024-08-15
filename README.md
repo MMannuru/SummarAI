@@ -7,7 +7,8 @@ I found it greatly beneficial to first get an idea of what I'm going to learn. T
 This app uses EvaDB, an AI database system that makes it easy to use machine learning models on SQL and vector databases. Here it is used to help summarize content 
 from a user's given PDF (EvaDB's in built support for BART is used in this app). SQLite is the default database engine that EvaDB connects to. 
 
-[](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fcreate-database-sqlite-short-introduction-sherif-sakr&psig=AOvVaw1MYmKuqSr1Ol5uzOMnDR9O&ust=1723844713223000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODbpJD894cDFQAAAAAdAAAAABAE)![image](https://github.com/user-attachments/assets/46fba8bb-8299-48dd-b143-845c1d1c66dc)
+<img src="https://github.com/user-attachments/assets/46fba8bb-8299-48dd-b143-845c1d1c66dc" alt="image" width="400" height="250"/>
+
 
 # *Step up*
 Ensure python version >= 3.9
