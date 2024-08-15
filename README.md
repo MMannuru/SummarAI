@@ -1,4 +1,4 @@
-## **Introduction**
+## *Introduction*
 SummarAI is an app that allows you to summarize PDFs and ask questions about them. The motivation behind this app was to help students study. When studying for classes,
 I found it greatly beneficial to first get an idea of what I'm going to learn. This can be applied to all PDFs. 
 
