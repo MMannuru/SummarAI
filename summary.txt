@@ -1,0 +1,5 @@
+Principal component analysis (PCA) is a dimensionality reduction and machine learning method used to simplify alarge data set 
+into a smaller set while still maintaining significant patterns and trends. Principal components are new variables that are 
+constructed as linear combinations or mixtures of the initial variables. As there are as many principal components as 
+there are variables in the data, principal components are constructed in such a manner that the first component accounts 
+for the largest possible variance.
