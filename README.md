@@ -1,11 +1,11 @@
-##**Introduction**
+## **Introduction**
 SummarAI is an app that allows you to summarize PDFs and ask questions about them. The motivation behind this app was to help students study. When studying for classes,
 I found it greatly beneficial to first get an idea of what I'm going to learn. This can be applied to all PDFs. 
 
 This app uses EvaDB, an AI database system that makes it easy to use machine learning models on SQL and vector databases. Here it is used to help summarize content 
 from a user's given PDF (EvaDB's in built support for BART is used in this app). SQLite is the default database engine that EvaDB connects to. 
 
-#*Step up*
+# *Step up*
 Ensure python version >= 3.9
 
 Install required libraries: 
@@ -18,11 +18,11 @@ althogh EvaDB has great built in support for openai I kept running into error co
 entire this commnand in terminal 
 export GROQ_API_KEY="your key"
 
-#*Usage*
+# *Usage*
 
 python summarize.py 
 
-#*Example*
+# *Example*
 
 
 
