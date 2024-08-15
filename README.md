@@ -36,8 +36,9 @@ export GROQ_API_KEY="your key"
 python summarize.py 
 
 # *Example*
+<img width="938" alt="Screenshot 2024-08-15 at 4 37 50 PM" src="https://github.com/user-attachments/assets/2043d416-1cac-43da-af9c-7788d2cf4754">
 <img width="942" alt="Screenshot 2024-08-15 at 4 38 14 PM" src="https://github.com/user-attachments/assets/22395c0e-36e5-4e97-acd9-123d383a9456">
-<img width="601" alt="Screenshot 2024-08-15 at 4 38 45 PM" src="https://github.com/user-attachments/assets/57062694-33e1-4a5f-9f36-54abdf2c00c6">
+
 
 
 
