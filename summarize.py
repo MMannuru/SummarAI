@@ -11,24 +11,22 @@ cursor = evadb.connect().cursor()
 cursor.query("DROP DATABASE IF EXISTS MLNotes;").df()
 
 #creating SQLite database to hold contents of PDF
-"""
-# Create the SQLite database
 cursor.query("""
-#CREATE DATABASE MLNotes
-#WITH ENGINE = 'sqlite',
-#PARAMETERS = {
-    #"database": "evadb_ml_notes.db"
-#};
+CREATE DATABASE MLNotes
+WITH ENGINE = 'sqlite',
+PARAMETERS = {
+    "database": "evadb_ml_notes.db"
+};
 """).df()
 
 #defining the AI function with EvaDB
 cursor.query("""
-    #CREATE FUNCTION IF NOT EXISTS TextSummarizer
-    #TYPE HuggingFace
-    #TASK 'summarization'
-    #MODEL 'facebook/bart-large-cnn'
+    CREATE FUNCTION IF NOT EXISTS TextSummarizer
+    TYPE HuggingFace
+    TASK 'summarization'
+    MODEL 'facebook/bart-large-cnn'
 """).df()
-"""
+
 
 #summarizing a PDF
 def summarize_pdf(pdf_path):
@@ -94,8 +92,9 @@ def answer_question(question):
 
     return answer_text
 
-#main program
+#main program to handle user input 
 def main():
+    #entry 
     print("============================================")
     print(" Hello 👋 Welcome to SummarAI!")
     print(" This app allows you to summarize notes 📝 and ask any questions 🙋‍♂️ you have!")
@@ -105,6 +104,7 @@ def main():
     print(f" The path you entered is {pdf_path}")
     confirmation = input(" Is this the correct path? (type yes/no): ").strip().lower()
 
+    #ending program if user entered wrong path 
     if confirmation == "no":
         print("Ending the program. Please rerun the program and enter the correct path.")
 
@@ -116,6 +116,7 @@ def main():
     print(f"\nYour notes summarized: ")
     print(summary_text)
 
+    #used pythons file IO system to allow user to save summary to local file 
     save_summary = input("\nWould you like to save your summary to a file? (type yes/no): ")
     if save_summary == "yes":
         output_path = input("What is the path you would like to save your file to? (e.g. notes.txt)")
@@ -125,6 +126,7 @@ def main():
 
     print("============================================")
     print("Now you have the opportunity to ask questions about the notes! Enter 'exit' to leave.")
+    #question answering 
     while True:
         question = input("\n Enter your question: ")
         if question.lower() == "exit":
@@ -133,6 +135,7 @@ def main():
         answer = answer_question(question)
         print(f"Answer: {answer}")
 
+#running program 
 if __name__ == "__main__":
     main()
 
